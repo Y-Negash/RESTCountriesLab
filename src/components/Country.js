@@ -1,4 +1,4 @@
-const Country = ({country,handleClick}) => {
+const Country = ({country, handleClick}) => {
 
     const mappedCapitals = () => {
         if(country.capital){
@@ -7,15 +7,14 @@ const Country = ({country,handleClick}) => {
         
 
     }
-    
-    
-    
+      
     return ( 
         <>
             <h2>{country.name.official}</h2>
             <p>This country is in the region of {country.region}</p>
-            <p>Capital City:</p>
-            <ul>{mappedCapitals()}</ul>
+            <ul>
+                {/* {mappedCapitals} */}
+            </ul>
             <button onClick={handleClick}>Visited!</button>
         </>
      );
