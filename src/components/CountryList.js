@@ -1,8 +1,9 @@
 import Country from "./Country";
 const CountryList = ({countries}) => {
     
-    const mappedCountries = countries.map(country => {
-        return <Country country={country} key={country.name.official} />
+    const mappedCountries = countries.map((country, id) => {
+        console.log(countries);
+        return <Country country={country} key={id} />
     });
     return (
         <>
@@ -12,3 +13,6 @@ const CountryList = ({countries}) => {
 }
  
 export default CountryList;
+
+
+// filter - conditional rendering 
