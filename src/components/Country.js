@@ -1,13 +1,17 @@
-const Country = ({country}) => {
+const Country = ({country, handleClick}) => {
 
-    const mappedCities = country.map( () => {
-        return <li key={country.name.official}>{country.capital}</li>
-    });
+    // const mappedCapitals = country.capital.map(country => {
+    //     return <li>{country.capital}</li>
+    // });
     
     return ( 
         <>
-            <h2>Country Name: {country.name.official}</h2>
+            <h2>{country.name.official}</h2>
             <p>This country is in the region of {country.region}</p>
+            <ul>
+                {/* {mappedCapitals} */}
+            </ul>
+            <button onClick={handleClick}>Visited!</button>
         </>
      );
 }
