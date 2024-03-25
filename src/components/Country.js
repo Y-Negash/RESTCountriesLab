@@ -4,6 +4,8 @@ const Country = ({country,handleClick}) => {
         if(country.capital){
             return country.capital.map((capital, id) => <li key={id}>{capital}</li>);
         }
+        
+
     }
     
     

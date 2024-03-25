@@ -4,7 +4,7 @@ import CountryList from "../components/CountryList";
 const CountryContainer = () => {
     
     const [countries, setCountries] = useState([]);
-    const [visitedCountries, setVisitedCountries] = useState([]);
+    let [visitedCountries, setVisitedCountries] = useState([]);
 
     const loadCountries = async () => {
         const response = await fetch("https://restcountries.com/v3.1/all");
@@ -19,13 +19,17 @@ const CountryContainer = () => {
         }, []
     );
 
+     visitedCountries = (visitedCountry) => {
+        setVisitedCountries([...countries, visitedCountry])
+    }
     const handleClick = () => {
-
+        
     }
     
     return ( 
         <>
-        <CountryList countries={countries} />
+        <CountryList countries={countries} setVisitedCountries={setVisitedCountries}/>
+        <CountryList visitedCountries={visitedCountries} />
         </>
      );
    
