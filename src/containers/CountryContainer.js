@@ -44,7 +44,7 @@ const CountryContainer = () => {
         <div className="countries">
         <div>
         <h2>Countries</h2>
-        <CountryList countries={countries} setVisitedCountries={setVisitedCountries} addCountry={addCountry}/></div>
+        <CountryList countries={countries} addCountry={addCountry}/></div>
         <div>
         <h2>Visited Countries</h2>
         <CountryList countries={visitedCountries}/></div>

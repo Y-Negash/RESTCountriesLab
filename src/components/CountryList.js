@@ -1,6 +1,6 @@
 import Country from "./Country";
 
-const CountryList = ({countries, setVisitedCountries, addCountry}) => {
+const CountryList = ({countries, addCountry}) => {
     
     const mappedCountries = countries.map((country, id) => {
         return <Country country={country} key={id} addCountry={addCountry}/>
