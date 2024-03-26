@@ -23,7 +23,7 @@ const Country = ({country, addCountry}) => {
 
     return ( 
         <>
-            <h2>{country.name.official}</h2>
+            <h2>{country.name.official} {country.flag}</h2>
             <p>This country is in the region of {country.region}</p>
             <ul>
                 {mappedCapitals()}

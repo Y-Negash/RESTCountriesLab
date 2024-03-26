@@ -1,3 +1,34 @@
-.countries {
+.allCountries{
     display: flex;
+    background-color:  rgb(203, 232, 243);
+    justify-content: space-around;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+
+.countries {
+    background-color: rgb(223, 240, 246);
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    border-radius: 20px;
+
+}
+
+.visited-countries {
+    background-color: rgb(223, 240, 246);
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    border-radius: 20px;
 }

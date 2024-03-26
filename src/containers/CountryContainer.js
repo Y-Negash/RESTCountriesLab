@@ -41,13 +41,13 @@ const CountryContainer = () => {
     
     return ( 
         <>
-        <div className="countries">
+        <div className="allCountries">
         <div>
-        <h2>Countries</h2>
-        <CountryList countries={countries} addCountry={addCountry}/></div>
+            <h1>Countries</h1>
+            <div className="countries"><CountryList countries={countries} addCountry={addCountry} id="country"/></div></div>
         <div>
-        <h2>Visited Countries</h2>
-        <CountryList countries={visitedCountries}/></div>
+            <h1>Visited Countries</h1>
+            <div className="visited-countries"><CountryList countries={visitedCountries}/></div></div>
         </div>
         </>
      );
